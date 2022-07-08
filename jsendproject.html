@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>REUNION DATA RECORDER</title>
+</head>
+
+<body onload="initUI()">
+    <table border="1" width="1400" align="center" bgcolor="lightblue">
+        <center>
+            <caption><h1>INSERT MEMBER DETAILS</h1></caption>
+            <tr>
+                <td align="center" style="height: 50px"><h3>ENTER MEMBER NAME</h3></td>
+                <td align="center"><h3>MEMBER REGISTRATION FEE</h3></td>
+                <td align="center"><h3>TOTAL AMOUNT IN COFFERS</h3></td>
+                <td align="center"><h3>TOTAL AMOUNT OWING</h3></td>
+            </tr>
+            <tr align="center">
+                
+            </tr>
+            <tr align="center">
+                <td align="center"><input type="text" name="name" id="meetingName" style="width: 350px;"></td>
+                <td align="center"><input type="number" name="age" id="nMembers" style="width: 350px;"></td>
+                <td align="center"><input type="text" name="disease" id="aCoffers" style="width: 350px;"></td>
+                <td align="center"><input type="text" name="disease" id="aOwing" style="width: 350px;"></td>
+            </tr>
+            <br>
+            <div>
+                <tr>
+                    <td colspan="4" align="center">
+                        <span style="padding-right: 50px;"><input type="button" value="ADD MEMBER" id="addbut"></span>
+                    </td>
+            </div>
+            </tr>
+        </center>
+    </table>
+
+    <table border="1" width="1460" align="center" bgcolor="cream">
+        <center>
+            <h1>DISPLAY DATA</h1>
+            <thead align="center">
+                <tr>
+                    <td style="width: 4px; height: 50px"><h2>Nº</h2></td>
+                    <td style="width: 346px"><h2>MEMBER NAME</h2></td>
+                    <td style="width: 375px"><h2>MEMBER REGISTRATION FEE</h2></td>
+                    <td style="width: 375px"><h2>TOTAL AMOUNT IN COFFERS</h2></td>
+                    <td style="width: 375px"><h2>TOTAL AMOUNT OWING</h2></td>
+                    <td style="width: 100px; display: none"><h2>ACTION</h2></td>
+                </tr>
+                <tbody id="displayMeetingDetails"></tbody>
+            </thead>
+        </center>
+    </table>
+    <script src="javascript/jsendproject.js"></script>
+</body>
+
+</html>
