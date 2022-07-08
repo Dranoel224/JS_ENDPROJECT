@@ -22,11 +22,8 @@ If an element in filter is truthy, the corresponding element in the collection b
 to the first group; otherwise, it belongs to the second group.  */
 /* Number 3: Class correction from CHAO */
 
-//method 1(Chao): I will use the reduce and push
-let program = (arr, filter) => arr.reduce((ac, val, i) => (ac[filter[i] ? 0 : 1].push(val), ac, [[], []])
 
-
-//method 2(Zeldris): I will use the split and splice
+//I will use the split and splice
 function Split(arr, filter) {
         let newArr = [[], []];
         for (let i = 0; i < arr.length; i++) {
@@ -39,7 +36,7 @@ function Split(arr, filter) {
         return newArr;
     }
 
-//method 3(Teacher): I will use the map
+// I will use the map
 let classify = (arr1, filter) => [
     [...arr1.filter((item, i) => filter[i])],
     [...arr.filter((item, i) => !filter[i])]
@@ -50,21 +47,7 @@ console.log(classify([1, 2, 3, 4, 5], [0, 1, false, true, null]));
 
 /* 4. Write a JavaScript program to remove specified elements from the left of a given array of elements.*/
 
-let lefRem = arr.shift();
-document.getElementById("display2").innerHTML = lefRem + " was just removed from the left of the collection";
 
-function myFunc2() {
-    return lefRem;
-}
-
-// Class corretion. (removes only 1)
-let arr1 = [9, 20, 30];
-function remLeft(x) {
-    let leftRem = x.shift()
-}
-console.log(remLeft(arr1))
-
-//method 2(Chao): Removes universally
 function removeFromLeft(arr, n = 1) {
     return arr.slice(n);
 }
@@ -75,20 +58,12 @@ console.log([1, 3, 5, 2]);
 
 /* 5. Write a JavaScript program to remove specified elements from the right of a given array of elements. */
 
-let rightRem = arr.pop();
-document.getElementById("display3").innerHTML = rightRem + " was just removed from the right of the collection";
-
-function myFunc3() {
-    return rightRem;
+function removeFromRight(arr, n = 1) {
+    return arr.pop(n);
 }
+console.log([1, 3, 5, 2]);
+//Output: [1, 3, 5]
 
-
-//Method 1:
-function myFruits(a){
-    let newAr = [];
-    newAr = a.pop()
-    return newAr
-}
 
 /* 7. Write a JavaScript program to get every nth element in a given array.  */
 
